@@ -24,27 +24,29 @@
 
     <main>
         <section>
-            <h2>How Mobile Rendering Works</h2>
-            <p>Unlike desktop browsers, mobile browsers must balance performance with extreme energy efficiency. Most modern mobile browsers rely on a specific <strong>Rendering Engine</strong> to translate HTML, CSS, and JavaScript into the visual interface you see on your screen.</p>
+            <h2>Understanding the Mobile Stack</h2>
+            <p>Mobile browser architecture is designed to optimize performance within the constraints of mobile hardware, such as limited battery life and fluctuating network speeds.</p>
             
-            <img src="images/browser-engine.png" alt="Diagram showing the interaction between the UI, Rendering Engine, and Data Storage" width="500">
+            <div class="image-container">
+                <img src="images/hybrid-mobile-app-architecture-1024x571 (2).png" alt="Diagram showing the layers of hybrid mobile application architecture" style="max-width:100%; height:auto; border: 1px solid #ddd;">
+                <p><em>Figure 1: Hybrid Mobile Architecture Layers</em></p>
+            </div>
         </section>
 
         <section>
-            <h2>Core Components</h2>
-            <p>Every mobile browser architecture consists of several layers that work together:</p>
+            <h2>Key Components</h2>
+            <p>The architecture of a mobile browser typically involves several interconnected layers:</p>
             <ul>
-                <li><strong>User Interface (UI):</strong> Includes the address bar, back/forward buttons, and bookmarking menu.</li>
-                <li><strong>Browser Engine:</strong> Marshals actions between the UI and the rendering engine.</li>
-                <li><strong>Rendering Engine:</strong> Responsible for displaying requested content (e.g., WebKit for Safari, Blink for Chrome).</li>
-                <li><strong>Networking:</strong> Handles HTTP requests and security protocols like TLS.</li>
-                <li><strong>JavaScript Interpreter:</strong> Parses and executes JS code (e.g., V8 engine).</li>
+                <li><strong>The UI Wrapper:</strong> The visual "chrome" (address bar, navigation buttons).</li>
+                <li><strong>The Rendering Engine:</strong> Interprets HTML/CSS (e.g., WebKit for iOS).</li>
+                <li><strong>The JavaScript Engine:</strong> Executes the logic and interactivity of the site.</li>
+                <li><strong>The Storage Layer:</strong> Manages local data like cookies and cache.</li>
             </ul>
         </section>
 
         <section>
-            <h2>Platform Differences</h2>
-            <p>On iOS, Apple requires all browsers to use the <strong>WebKit</strong> engine. On Android, developers have more flexibility, though most utilize <strong>Blink</strong> (Chromium). This creates a unique challenge for IT professionals ensuring cross-platform compatibility.</p>
+            <h2>Cross-Platform Implementation</h2>
+            <p>From an IT perspective, understanding how browsers interact with the mobile OS is vital. Hybrid architectures allow web technologies to run within a native container, bridging the gap between standard web pages and mobile applications.</p>
         </section>
     </main>
 
