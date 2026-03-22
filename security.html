@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security - Mobile Browsers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Mobile Browser Security</h1>
+        <nav class="main-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="architecture.html">Architecture</a></li>
+                <li><a href="security.html">Security</a></li>
+                <li><a href="concepts.html">Key Concepts</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>The Security Perimeter</h2>
+            <p>Mobile browsers face unique security challenges compared to desktops. Because users often access sensitive data on public cellular or Wi-Fi networks, the browser must act as a hardened gateway between the web and the device's hardware.</p>
+        </section>
+
+        <section>
+            <h2>Key Security Mechanisms</h2>
+            <p>Modern mobile browsers implement several layers of protection to safeguard user information:</p>
+            <ul>
+                <li><strong>Process Sandboxing:</strong> Each tab or site runs in its own restricted environment, preventing a malicious website from accessing the phone's operating system or other apps.</li>
+                <li><strong>Site Isolation:</strong> Ensures that pages from different websites are always put into different processes to prevent "Spectre-style" attacks.</li>
+                <li><strong>Phishing Protections:</strong> Integrated lists (like Google Safe Browsing) that warn users before they load a known malicious URL.</li>
+                <li><strong>Biometric Integration:</strong> Secure APIs (like WebAuthn) allow users to log into websites using FaceID or fingerprints instead of vulnerable passwords.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Privacy & Tracking</h2>
+            <p>A major focus of mobile browser security in 2026 is **Intelligent Tracking Prevention (ITP)**. This technology limits the ability of advertisers to follow users across different sites by restricting third-party cookies and "fingerprinting" techniques that identify your specific device.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>This is a class project for IT 3203. View the 
+           <a href="https://ksuweb.github.io/IT3203/" target="_blank">Class Website here</a>.
+        </p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architecture - Mobile Browsers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Mobile Browser Architecture</h1>
+        <nav class="main-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="architecture.html">Architecture</a></li>
+                <li><a href="security.html">Security</a></li>
+                <li><a href="concepts.html">Key Concepts</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>How Mobile Rendering Works</h2>
+            <p>Unlike desktop browsers, mobile browsers must balance performance with extreme energy efficiency. Most modern mobile browsers rely on a specific <strong>Rendering Engine</strong> to translate HTML, CSS, and JavaScript into the visual interface you see on your screen.</p>
+            
+            <img src="images/browser-engine.png" alt="Diagram showing the interaction between the UI, Rendering Engine, and Data Storage" width="500">
+        </section>
+
+        <section>
+            <h2>Core Components</h2>
+            <p>Every mobile browser architecture consists of several layers that work together:</p>
+            <ul>
+                <li><strong>User Interface (UI):</strong> Includes the address bar, back/forward buttons, and bookmarking menu.</li>
+                <li><strong>Browser Engine:</strong> Marshals actions between the UI and the rendering engine.</li>
+                <li><strong>Rendering Engine:</strong> Responsible for displaying requested content (e.g., WebKit for Safari, Blink for Chrome).</li>
+                <li><strong>Networking:</strong> Handles HTTP requests and security protocols like TLS.</li>
+                <li><strong>JavaScript Interpreter:</strong> Parses and executes JS code (e.g., V8 engine).</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Platform Differences</h2>
+            <p>On iOS, Apple requires all browsers to use the <strong>WebKit</strong> engine. On Android, developers have more flexibility, though most utilize <strong>Blink</strong> (Chromium). This creates a unique challenge for IT professionals ensuring cross-platform compatibility.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>This is a class project for IT 3203. View the 
+           <a href="https://ksuweb.github.io/IT3203/" target="_blank">Class Website here</a>.
+        </p>
+    </footer>
+
+</body>
+</html>

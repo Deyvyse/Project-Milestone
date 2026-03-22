@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Concepts - Mobile Browsers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Mobile Browser Research</h1>
+        <nav class="main-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="architecture.html">Architecture</a></li>
+                <li><a href="security.html">Security</a></li>
+                <li><a href="concepts.html">Key Concepts</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Essential Technical Terms</h2>
+        <p>To understand how mobile browsing works, we must define these 5 core concepts:</p>
+
+        <table class="concept-table">
+            <thead>
+                <tr>
+                    <th>Term</th>
+                    <th>Definition</th>
+                    <th>Security Impact</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Rendering Engine</strong></td>
+                    <td>The software (like WebKit) that interprets HTML/CSS into pixels.</td>
+                    <td>Vulnerabilities here can lead to remote code execution.</td>
+                </tr>
+                <tr>
+                    <td><strong>Sandboxing</strong></td>
+                    <td>Restricting the browser's access to the device's OS and files.</td>
+                    <td>Prevents a malicious site from stealing your photos or contacts.</td>
+                </tr>
+                <tr>
+                    <td><strong>User Agent</strong></td>
+                    <td>A string sent to servers to identify the browser and OS.</td>
+                    <td>Can be spoofed to bypass mobile-only restrictions.</td>
+                </tr>
+                <tr>
+                    <td><strong>PWA</strong></td>
+                    <td>Web apps that function like native apps (offline mode, icons).</td>
+                    <td>Requires careful permission handling for hardware access.</td>
+                </tr>
+                <tr>
+                    <td><strong>HTTPS</strong></td>
+                    <td>Encrypted data transfer between the browser and the server.</td>
+                    <td>Critical for mobile users on public Wi-Fi (like at a cafe).</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>This is a class project for IT 3203. View the 
+           <a href="https://ksuweb.github.io/IT3203/" target="_blank">Class Website here</a>.
+        </p>
+    </footer>
+
+</body>
+</html>
