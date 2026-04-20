@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Browser Quiz - IT 3203</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Mobile Browser Assessment</h1>
+        <nav class="main-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="architecture.html">Architecture</a></li>
+                <li><a href="security.html">Security</a></li>
+                <li><a href="concepts.html">Key Concepts</a></li>
+                <li><a href="quiz.html">Quiz</a></li> <li><a href="resources.html">Resources</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="quiz-container">
+            <h2>Test Your Knowledge</h2>
+            <form id="mobileQuiz">
+                
+                <div class="question">
+                    <p>1. Which rendering engine is required by Apple for all iOS browsers?</p>
+                    <input type="text" id="q1" name="q1" placeholder="Type answer here...">
+                </div>
+
+                <div class="question">
+                    <p>2. What is the main purpose of "Sandboxing" in a mobile browser?</p>
+                    <label><input type="radio" name="q2" value="A"> A) To speed up page loading</label><br>
+                    <label><input type="radio" name="q2" value="B"> B) To isolate the browser from the OS for security</label><br>
+                    <label><input type="radio" name="q2" value="C"> C) To save battery life</label>
+                </div>
+
+                <div class="question">
+                    <p>3. What does "PWA" stand for?</p>
+                    <label><input type="radio" name="q3" value="A"> A) Private Web Access</label><br>
+                    <label><input type="radio" name="q3" value="B"> B) Portable Web Architecture</label><br>
+                    <label><input type="radio" name="q3" value="C"> C) Progressive Web App</label>
+                </div>
+
+                <div class="question">
+                    <p>4. Which company developed the Blink rendering engine?</p>
+                    <label><input type="radio" name="q4" value="A"> A) Google</label><br>
+                    <label><input type="radio" name="q4" value="B"> B) Apple</label><br>
+                    <label><input type="radio" name="q4" value="C"> C) Microsoft</label>
+                </div>
+
+                <div class="question">
+                    <p>5. Which of the following are mobile browser engines? (Select all that apply)</p>
+                    <label><input type="checkbox" name="q5" value="WebKit"> WebKit</label><br>
+                    <label><input type="checkbox" name="q5" value="Blink"> Blink</label><br>
+                    <label><input type="checkbox" name="q5" value="Gecko"> Gecko</label><br>
+                    <label><input type="checkbox" name="q5" value="Trident"> Trident</label>
+                </div>
+
+                <div class="buttons">
+                    <button type="button" onclick="calculateScore()">Submit Quiz</button>
+                    <button type="reset" onclick="resetQuiz()">Reset Quiz</button>
+                </div>
+            </form>
+
+            <div id="results" style="display:none;">
+                <hr>
+                <h3 id="passFail"></h3>
+                <p id="scoreDisplay"></p>
+                <div id="detailedResults"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>This is a class project for IT 3203. View the 
+           <a href="https://ksuweb.github.io/IT3203/" target="_blank">Class Website here</a>.
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
